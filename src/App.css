@@ -23,12 +23,22 @@ body,
   z-index: 1;
 }
 
-.ui_overlay {
+.ui_mainoverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 20%;
-  height: 50%;
-  background-color: rgba(255, 255, 255, 0);
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+.ui_suboverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
   z-index: 2;
 }

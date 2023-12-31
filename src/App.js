@@ -3,14 +3,15 @@ import {Canvas, useFrame, useLoader, useThree} from "@react-three/fiber";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import './App.css';
 import Bodyviewer from "./bodyviewer";
-import Chart from "./charts";
+import {MainChart, SubCharts} from "./charts";
 import { use } from "echarts";
 
 
 function App() {
+  const chartRef = useRef(null);
   const [body, selectBody] = useState('None');
-  const handleModelChose = (organ) => {
-      selectBody(organ)
+  const handleModelChose = (bodypart) => {
+      selectBody(bodypart)
   };
   const handleModelunChose = () => {
       selectBody('None')
@@ -22,12 +23,18 @@ function App() {
         <Bodyviewer bodypart={body}
                     onModelChose={handleModelChose}
                     onModelLeave={handleModelunChose}
+                    chartRef={chartRef}
         />
       </div>
-      <div className="ui_overlay">
-        <h1>status:</h1>
-        <h1>{body}</h1>
-        <Chart bodypart={body}/>
+      <div className="ui_suboverlay">
+        <h2>Soccer Injuries by Body</h2>
+        <MainChart  bodypart={body}
+                chartRef={chartRef}
+        />
+      </div>
+      <div className="ui_mainoverlay">
+        <h2>Details</h2>
+        <SubCharts bodypart={body} />
       </div>
     </div>     
   );
