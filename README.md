@@ -8,7 +8,7 @@ This project implemented a 3D body viewer which can interact with user mouse act
 
 ## Screenshot
 
-![screenshot](/public/screenshot.png)
+![screenshot](public/screenshot.png)
 
 ## Architecture
 
