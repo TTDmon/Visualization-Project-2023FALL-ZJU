@@ -1,7 +1,7 @@
 {
   "name": "design",
   "version": "0.1.0",
-  "homepage": "https://TTDmon.github.io/Visualization-Project-2023FALL-ZJU",
+  "homepage": "https://ttdmon.github.io/Visualization-Project-2023FALL-ZJU",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.92.7",
