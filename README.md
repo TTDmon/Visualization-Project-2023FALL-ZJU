@@ -16,11 +16,9 @@ React + React_Three-Fiber(Three.js) + Echarts-for-React
 
 ## Procedure
 
--Use Blender to previously modify the model, divide it into several parts
--Use GTFL loader to import model
--Collect datasets from websites
--Integrate ECharts into React to visualize data
--Use React and Three.js to bind different body part with data charts
--Interact with different body region!
-
-## 
+- Use Blender to previously modify the model, divide it into several parts
+- Use GTFL loader to import model
+- Collect datasets from websites
+- Integrate ECharts into React to visualize data
+- Use React and Three.js to bind different body part with data charts
+- Interact with different body region!
