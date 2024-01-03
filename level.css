@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+}
+
+/*.layer {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px solid red;
+}*/
+
+.layer1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.layer2 {
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Visualization-Project-2023FALL-ZJU/static/css/main.ab8fb5f4.css",
+    "main.js": "/Visualization-Project-2023FALL-ZJU/static/js/main.0959be3f.js",
+    "static/js/787.66b4d80b.chunk.js": "/Visualization-Project-2023FALL-ZJU/static/js/787.66b4d80b.chunk.js",
+    "index.html": "/Visualization-Project-2023FALL-ZJU/index.html",
+    "main.ab8fb5f4.css.map": "/Visualization-Project-2023FALL-ZJU/static/css/main.ab8fb5f4.css.map",
+    "main.0959be3f.js.map": "/Visualization-Project-2023FALL-ZJU/static/js/main.0959be3f.js.map",
+    "787.66b4d80b.chunk.js.map": "/Visualization-Project-2023FALL-ZJU/static/js/787.66b4d80b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab8fb5f4.css",
+    "static/js/main.0959be3f.js"
+  ]
+}
