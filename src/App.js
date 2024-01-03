@@ -27,13 +27,13 @@ function App() {
         />
       </div>
       <div className="ui_suboverlay">
-        <h2>Soccer Injuries by Body</h2>
+        <h1>Soccer Injuries by Body Region</h1>
         <MainChart  bodypart={body}
                 chartRef={chartRef}
         />
       </div>
       <div className="ui_mainoverlay">
-        <h2>Details</h2>
+        <h1>Details</h1>
         <SubCharts bodypart={body} />
       </div>
     </div>     

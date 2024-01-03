@@ -69,7 +69,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
     return (
             <Canvas camera={{ position: [-0.5, 1, 2] }} shadows>
                 <directionalLight
-                    position={[0, 50, 50]}
+                    position={[20, 50, 50]}
                     castShadow
                     intensity={Math.PI * 2}
                 />
@@ -97,7 +97,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}               
                 >
-                    <meshStandardMaterial color={active == 'Head' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Head' ? 0xffa684 : "grey"} />
                 </animated.mesh>                     
                 <animated.mesh
                     name="player_body" castShadow receiveShadow geometry={nodes.Body.geometry} material={nodes.Body.material}
@@ -117,7 +117,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}           
                 >
-                    <meshStandardMaterial color={active == 'Body' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Body' ? 0xff6459 : "grey"} />
                 </animated.mesh>                     
                 <animated.mesh
                     name="player_arms" castShadow receiveShadow geometry={nodes.Arms.geometry} material={nodes.Arms.material}
@@ -137,7 +137,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}             
                 >
-                    <meshStandardMaterial color={active == 'Arms' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Arms' ? 0xff856e : "grey"} />
                 </animated.mesh>                     
                 <animated.mesh
                     name="player_back" castShadow receiveShadow geometry={nodes.Back.geometry} material={nodes.Back.material}
@@ -157,7 +157,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}               
                 >
-                    <meshStandardMaterial color={active == 'Back' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Back' ? 0xffe9af : "grey"} />
                 </animated.mesh>                     
                 <animated.mesh
                     name="player_uplegs" castShadow receiveShadow geometry={nodes.Uplegs.geometry} material={nodes.Uplegs.material}
@@ -177,7 +177,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}               
                 >
-                    <meshStandardMaterial color={active == 'Uplegs' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Uplegs' ? 0xff0018 : "grey"} />
                 </animated.mesh>                     
                 <animated.mesh
                     name="player_knees" castShadow receiveShadow geometry={nodes.Knees.geometry} material={nodes.Knees.material}
@@ -197,7 +197,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}               
                 >
-                    <meshStandardMaterial color={active == 'Knees' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Knees' ? 0xff4343 : "grey"} />
                 </animated.mesh>                     
                 <animated.mesh
                     name="player_lowerlegs" castShadow receiveShadow geometry={nodes.Lowerlegs.geometry} material={nodes.Lowerlegs.material}
@@ -217,7 +217,7 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}               
                 >
-                    <meshStandardMaterial color={active == 'Lowerlegs' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Lowerlegs' ? 0xffc899 : "grey"} />
                 </animated.mesh>                     
                 <animated.mesh
                     name="player_feet" castShadow receiveShadow geometry={nodes.Feet.geometry} material={nodes.Feet.material}
@@ -237,9 +237,9 @@ function Bodyviewer({bodypart, onModelChose, onModelLeave, chartRef}) {
                         }
                     }}               
                 >
-                    <meshStandardMaterial color={active == 'Feet' ? "hotpink" : "grey"} />
+                    <meshStandardMaterial color={active == 'Feet' ? 0xff212e : "grey"} />
                 </animated.mesh>  
-                <primitive object={ball.scene} position={[-0.5, 0, 0.3]} scale={0.12}/>                                     
+                <primitive object={ball.scene} castShadow receiveShadow position={[-0.5, 0, 0.3]} scale={0.12} />                                     
                 <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow>
                     <meshStandardMaterial/>
                 </Circle>
